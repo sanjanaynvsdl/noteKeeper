@@ -6,6 +6,7 @@ mongoose.connect(config.connectionString);
 
 //Importing models
 const User=require('./models/user.model');
+const Note=require('./models/note.model');
 
 
 
@@ -157,6 +158,7 @@ app.post("/login",async(req,res)=> {
 
 //add-note
 app.post("/add-note", authenticateToken , async(req,res)=> {
+    
 
 
 })
